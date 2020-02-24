@@ -9,10 +9,13 @@ class Backer
     end
 
     def back_project(project)
+        # this is how you connect the many-to-many classes via conector
         ProjectBacker.new(project, self)
     end
 
     def backed_projects
+        # returned an array of the projecst associated with each backer. 
+        # had to look at ProjectBacker iterate through self and then iterate through the array you made the first time. 
         b_p = ProjectBacker.all.select do |obj| 
             obj.backer == self    
             end
