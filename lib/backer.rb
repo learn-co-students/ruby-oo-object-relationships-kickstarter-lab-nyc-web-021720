@@ -16,6 +16,21 @@ attr_reader :name
    end.map do | p_b |
      p_b.project 
    end
+
+   def aaa
+      if a then
+         if b then
+            
+         begin
+            
+         end
+         rescue => exception
+            
+         else
+            
+         end
+      end
+   end
 end 
 
 
