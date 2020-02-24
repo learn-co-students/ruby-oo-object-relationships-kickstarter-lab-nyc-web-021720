@@ -15,11 +15,11 @@ describe 'Project - ::new' do
 end
 
 describe 'ProjectBacker' do
-  describe '@@all' do
-    it 'is a class variable set to an empty array' do
-      expect(ProjectBacker.class_variable_get(:@@all)).to eq([])
-    end
-  end
+#   describe '@@all' do
+#     it 'is a class variable set to an empty array' do
+#       expect(ProjectBacker.class_variable_get(:@@all)).to eq([])
+#     end
+#   end
 
   describe '.all' do
     it 'is a class method that returns the @@all class variable' do
